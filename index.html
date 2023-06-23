@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>TODOリスト</title>
+</head>
+<body>
+  <main>
+    <div id="input">
+        <label>TODO: <input id="todo"></label><br>
+        <label>期日: <input type="date"></label><br>
+        <button id="submit">登録</button>
+    </div>
+
+    <style>
+        .tbl{
+            display: flex;
+            align-items: flex-start;
+        }
+    </style>
+    <div class="tbl">
+        <table class="to">
+            <tr>
+                <th id="todoLabel">TO</th>
+                <th id="dateLabel">期日</th>
+                <th> ✓ </th>
+            </tr>
+        </table>
+
+        <table class="doing">
+            <tr>
+                <th id="todoLabel">DOING</th>
+                <th id="dateLabel">期日</th>
+                <th> ✓ </th>
+            </tr>
+        </table>
+
+        <table class="done">
+            <tr>
+                <th id="todoLabel">DONE</th>
+                <th id="dateLabel">期日</th>
+                <th> ✓ </th>
+            </tr>
+        </table>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
